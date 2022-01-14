@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Water Tank Problem</title>
+</head>
+<body>
+    <div class="container">
+        <label for="waterIn" id="waterIn">
+            Приток Жидкости
+            <input class="number-input" type="number" step="0.05" name="waterIn" title="Water Flow In" />
+            <select name="waterIn" class="select-input" id="waterInSelect" disabled>
+                <option >- - - - - - - - - - - - - - - -</option>
+                <option value="0">малый</option>
+                <option value="1">средний</option>
+                <option value="2">большой</option>
+            </select>
+        </label>
+        <label for="waterLevel" id="waterLevel">
+            Уровень Жидкости
+            <input class="number-input" type="number" step="0.05" name="waterLevel" title="Water Level" />
+            <select name="waterLevel" class="select-input" id="waterLevelSelect">
+                <option>- выберите уровень -</option>
+                <option value="0.75">малый</option>
+                <option value="0.25">средний</option>
+                <option value="0.00">большой</option>
+            </select>
+        </label>
+        
+        <img src="water-tank.png" alt="Water Tank">
+        
+        <label for="waterOut" id="waterOut">
+            Расход Жидкости
+            <input class="number-input" type="number" step="0.05" name="waterOut" title="Water Flow Out"/>
+            <select name="waterOut" class="select-input" id="waterOutSelect">
+                <option>- выберите уровень -</option>
+                <option value="0.00">малый</option>
+                <option value="0.50">средний</option>
+                <option value="1.00">большой</option>
+            </select>
+        </label>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60vw;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label > .number-input, label > .select-input {
+    width: 150px;
+    padding: 0.2em 0.6em;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid rgb(95, 95, 255);
+}
+
+label > .number-input {
+    display: none;
+}
+
+label > .select-input {
+    width: 250px;
+}
+
+#waterIn {
+    top: 60px;
+    left: 150px;
+}
+
+#waterLevel {
+    top: 350px;
+}
+
+#waterOut {
+    bottom: 60px;
+    right: 180px;
+}
+
+img {
+    width: 50vw;
+    height: 70vh;
+}
